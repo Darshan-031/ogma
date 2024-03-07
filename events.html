@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGMA.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="images/ogma_logo.png">``
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .event-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .event-container figure {
+	        position: relative;
+            border-radius: 4px;
+        }
+        .event-container figure:active{
+            scale: 0.98;
+        }
+        .event-container figure:hover{
+            scale: 1.03;
+        }
+        .event-container figure::before {
+	        position: absolute;
+	        top: 0;
+            left: -75%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 50%;
+            height: 100%;
+            background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+            -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+        .event-container figure:hover::before {
+            -webkit-animation: shine .75s;
+            animation: shine .75s;
+        }
+        @-webkit-keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+        @keyframes shine {
+            100% {
+                left: 125%;
+            }
+        }
+        .event-container {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.event-container:last-child {
+	padding-bottom: 60px;
+}
+.event-container::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.event-container div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+    margin-bottom: 90px;
+	padding: 0;
+    border: 3px solid rgb(30, 29, 29);
+    border-top: none;
+    border-left: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(15, 14, 14);
+}
+.event-container div:first-child {
+	margin-left: 0;
+}
+.event-container div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+	overflow: hidden;
+}
+figure a img{
+    width: 300px;
+	height: 200px;
+    
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+    scale: 1.2;
+}
+
+    </style>
+</head>
+
+<body >
+
+    <header>
+        <a href="https://theogma.nitt.edu/events.php" target="_blank"><img src="images/ogma_logo.png" alt="Tech Club Logo" width="100" height="100" id="logo"></a>
+        <nav>
+            <a href="main2.html" class="menu"><span>home</span></a>
+            <a href="member.html" class="menu"><span>Team</span></a>
+            <a href="events.html" class="menu"><span>Events</span></a>
+            <a href="contact.html" class="menu"><span>Contact</span></a>
+        </nav>
+        <a href="main2.html"><h1>O G M A</h1></a>
+    </header>
+
+    <section >
+        <h2>Events</h2>
+
+        <!-- Event Container -->
+        <div class="event-container" >
+            <div>
+                <figure><a href="https://theogma.nitt.edu/events.php" target="_blank"><img src="images/7.jpg" /></a></figure>
+                <span>Personality Development</span>
+            </div>
+
+            <div>
+                <figure><a href="https://theogma.nitt.edu/events.php" target="_blank"><img src="images/6.jpg" /></a></figure>
+                <span>Tackling Stage Fear</span>
+            </div>
+
+            <div>
+                <figure><a href="https://theogma.nitt.edu/events.php" target="_blank"><img src="images/5.jpg" /></a></figure>
+                <span>Public Speaking</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="media-icons">
+            <a href="https://theogma.nitt.edu/index.php" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://theogma.nitt.edu/index.php" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://theogma.nitt.edu/index.php" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

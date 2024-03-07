@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="images/ogma_logo.png">
+    <title>OGMA.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            margin-top: 90px;
+            margin-bottom: 80px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        form:active{
+            scale: 0.99;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2d2d2d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #4b4b4b;
+            scale: 1.01;
+        }
+        button:active {
+            scale: 0.98;
+        }
+    </style>
+</head>
+
+<body style="background: url('images/particlesjs-examples.gif');background-size: cover;">
+
+    <header>
+        <a href="https://theogma.nitt.edu/events.php" target="_blank"><img src="images/ogma_logo.png" alt="Tech Club Logo" width="100" height="100" id="logo"></a>
+        <nav>
+            <a href="main2.html" class="menu"><span>home</span></a>
+            <a href="member.html" class="menu"><span>Team</span></a>
+            <a href="events.html" class="menu"><span>Events</span></a>
+            <a href="contact.html" class="menu"><span>Contact</span></a>
+        </nav>
+        <a href="main2.html"><h1>O G M A</h1></a>
+    </header>
+
+    <form class="contact">
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <div class="media-icons">
+            <a href="https://theogma.nitt.edu/index.php" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://theogma.nitt.edu/index.php" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://theogma.nitt.edu/index.php" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
